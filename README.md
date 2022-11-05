@@ -19,3 +19,9 @@ School Add URL: http://localhost/school_management/schools/create
 School Edit URL: http://localhost/school_management/schools/edit/1
 School Delete URL: http://localhost/school_management/schools/delete/1
 School Update URL : http://localhost/school_management/schools/update/1
+
+
+Sample Creds
+
+Email :- abhi@gmail.com
+Password :- Test@123
