@@ -72,22 +72,19 @@
 
 			if(!empty($_POST)){
 				$this->load->library('form_validation');
-				$this->form_validation->set_rules('first_name', 'First Name:', 'required');
-				$this->form_validation->set_rules('last_name', 'Last Name:', 'required');  
+				$this->form_validation->set_rules('name', 'First Name:', 'required');
 				$this->form_validation->set_rules('emailaddress', 'Email:', 'required|valid_email');  
                 $this->form_validation->set_rules('mobile', 'Mobile:', 'required');  
                 $this->form_validation->set_rules('password', 'Password:', 'required|min_length[6]'); 
 
                 if($this->form_validation->run()){
-                	$first_name = $this->input->post('first_name');
-                	$last_name = $this->input->post('last_name');
+                	$name = $this->input->post('name');
                 	$mobile = $this->input->post('mobile');
                 	$emailaddress = $this->input->post('emailaddress');
 					$password = $this->input->post('password');
 
 					$user_register_data = array(
-			    		'first_name' => $first_name,
-			    		'last_name' => $last_name,
+			    		'name' => $name,
 			    		'email' => $emailaddress,
 			    		'mobile' => $mobile,
 			    		'visible_password' => $password,
